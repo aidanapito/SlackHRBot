@@ -31,7 +31,7 @@ try:
         for alias in section.get("aliases", []):
             alias_to_file[alias.lower()] = filename
 except FileNotFoundError:
-    print("⚠️ config/section_map.json not found. Exact section matching will be disabled.")
+    print("config/section_map.json not found. Exact section matching will be disabled.")
 
 def get_best_matching_section(query, threshold=70):
     if not alias_to_file:
@@ -55,7 +55,7 @@ def get_answer(query):
     if matched_section:
         section_path = os.path.join("hr_docs_by_section", matched_section)
         if not os.path.exists(section_path):
-            return f"⚠️ Section file not found: {matched_section}"
+            return f"Section file not found: {matched_section}"
 
         with open(section_path, "r", encoding="utf-8") as f:
             context = f.read()

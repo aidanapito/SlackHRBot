@@ -2,7 +2,7 @@ import pdfplumber
 import os
 
 #Path to your PDF
-PDF_PATH = "hr_docs/RouxbeStaffManual.pdf"
+PDF_PATH = "HR_MANUAL_PATH"
 
 #Output file
 OUTPUT_PATH = os.path.join("hr_docs", "staff_manual.txt")
