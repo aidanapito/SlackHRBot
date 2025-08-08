@@ -1,3 +1,20 @@
+# Secrets
 .env
+
+# Document sources / embedded content (don't commit the manual or its derived sections)
 hr_docs/
 hr_docs_by_section/
+
+# Section map with real aliases (keep a template in repo instead)
+config/section_map.json
+
+# Chroma persistence (local vector DB)
+chroma_store/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# macOS cruft
+.DS_Store

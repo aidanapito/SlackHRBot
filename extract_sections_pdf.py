@@ -3,7 +3,7 @@ import os
 import re
 
 #PDF and output folder
-PDF_PATH = "hr_docs/RouxbeStaffManual.pdf"
+PDF_PATH = "HR_MANUAL_PATH"
 OUTPUT_FOLDER = "hr_docs_by_section"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
